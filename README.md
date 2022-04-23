@@ -1,9 +1,8 @@
-# Jarvis
+# Jarvis - Your Personal Assistant
 
-Your personal assistant.
-
-Try out following commands:
-
+**Try out following commands:**
+<br />
+<br />
 Include Jarvis & Light or Lights & Off: Will turn off the lights. <br />
 <br />
 Include Jarvis & Light or Lights & On: Will turn the lights on. <br />
