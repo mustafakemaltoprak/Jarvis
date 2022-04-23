@@ -1,0 +1,16 @@
+.title {
+  color: #fab685;
+  letter-spacing: 0.05em;
+  text-shadow: 4px 4px 0px #26292e, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  height: 20px;
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic,
+    'AppleGothic', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
