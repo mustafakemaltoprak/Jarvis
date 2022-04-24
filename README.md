@@ -1,9 +1,6 @@
 # Jarvis - Your Personal Assistant
 
-**Jarvis acts as a home assistant (like Amazon's Alexa), try out a few of the following commands:**
-<br />
-<br />
-**Commands:**
+**Jarvis acts as a home assistant (like Amazon's Alexa). Click on Jarvis' logo & try out a few of the following commands:**
 <br />
 <br />
 Include Jarvis & Light or Lights & Off: Will turn off the lights.
