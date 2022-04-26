@@ -29,3 +29,8 @@ Include Jarvis & Google or Search & Search Term: Will google the search term for
 <br />
 <br />
 Include Jarvis & Stop & Listening: Will stop listening for your voice.
+<br />
+<br />
+Make sure to check out this video to see a very basic introduction to Jarvis:
+<br />
+https://www.youtube.com/watch?v=eVKmDTVNN30
