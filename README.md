@@ -1,6 +1,6 @@
 # Jarvis - Your Personal Assistant
 
-**Jarvis is a smart home assistant (like Amazon's Alexa).**
+Jarvis is a virtual home assistant that makes your day to day life a little bit easier.
 <br />
 <br />
 # Disclaimer
