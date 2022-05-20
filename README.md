@@ -4,9 +4,7 @@
 <br />
 <br />
 # Disclaimer
-**Light commands** will **only** work with **Philips HUE Smart Lights**, follow the following documentation to set it up:
-<br />
-https://developers.meethue.com/develop/get-started-2/
+**Light commands** will **only** work with **Philips HUE Smart Lights**, follow [this](https://developers.meethue.com/develop/get-started-2/) documentation to set it up.
 <br />
 <br />
 # Voice Commands
