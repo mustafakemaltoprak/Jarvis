@@ -40,7 +40,7 @@ export default function Jarvis() {
   async function turnLightOn(hue, sat, bri) {
     fetch(
       // ADD YOUR PERSONAL PHILIPS HUE LIGHTS LINK HERE, CHECK READ ME FOR HELP
-      'https://192.168.0.156/api/T5m5c7YJ2N4m9UJb9LLFx64PkHnDV0mHJqxkY0WO/lights/1/state',
+      process.env.PHILIPS_API_LINK,
       {
         method: 'PUT',
         headers: {
@@ -60,7 +60,7 @@ export default function Jarvis() {
   async function turnLightOff() {
     fetch(
       // ADD YOUR PERSONAL PHILIPS HUE LIGHTS LINK HERE, CHECK READ ME FOR HELP
-      'https://192.168.0.156/api/T5m5c7YJ2N4m9UJb9LLFx64PkHnDV0mHJqxkY0WO/lights/1/state',
+      process.env.PHILIPS_API_LINK,
       {
         method: 'PUT',
         headers: {
