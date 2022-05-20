@@ -1,15 +1,15 @@
 # Jarvis - Your Personal Assistant
 
-**Jarvis acts as a home assistant (like Amazon's Alexa). Click on Jarvis' logo & try out a few of the following commands:**
+**Jarvis is a smart home assistant (like Amazon's Alexa).**
 <br />
 <br />
+# Disclaimer
 **Light commands** will **only** work with **Philips HUE Smart Lights**, follow the following documentation to set it up:
 <br />
 https://developers.meethue.com/develop/get-started-2/
 <br />
-(Check the Jarvis component to see where you need to fetch your personal smart lights link)
 <br />
-<br />
+# Voice Commands
 Include Jarvis & Light or Lights & Off: Will turn off the lights.
 <br />
 <br />
@@ -31,6 +31,5 @@ Include Jarvis & Google or Search & Search Term: Will google the search term for
 Include Jarvis & Stop & Listening: Will stop listening for your voice.
 <br />
 <br />
-Make sure to check out this video to see a very basic introduction to Jarvis:
+Make sure to check out [this](https://www.youtube.com/watch?v=eVKmDTVNN30) video to see a very basic introduction to Jarvis.
 <br />
-https://www.youtube.com/watch?v=eVKmDTVNN30
