@@ -3,6 +3,11 @@
 Jarvis is a virtual home assistant that makes your day to day life a little bit easier.
 <br />
 <br />
+Make sure to check out [this](https://www.youtube.com/watch?v=eVKmDTVNN30) video to see a very basic introduction to Jarvis.
+<br />
+#
+<br />![Screen Recording 2022-06-12 at 02 05 08](https://user-images.githubusercontent.com/96595583/173208912-803dd5d2-7ce5-4d4b-9809-5815c06f681f.gif)
+#
 # Disclaimer
 **Light commands** will **only** work with **Philips HUE Smart Lights**, follow [this](https://developers.meethue.com/develop/get-started-2/) documentation to set it up.
 <br />
@@ -28,6 +33,4 @@ Include Jarvis & Google or Search & Search Term: Will google the search term for
 <br />
 Include Jarvis & Stop & Listening: Will stop listening for your voice.
 <br />
-<br />
-Make sure to check out [this](https://www.youtube.com/watch?v=eVKmDTVNN30) video to see a very basic introduction to Jarvis.
 <br />
