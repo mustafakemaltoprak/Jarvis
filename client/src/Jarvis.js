@@ -15,7 +15,7 @@ export default function Jarvis() {
   useEffect(() => {
     initalWeather();
     randomJoke();
-  });
+  }, [toggled]);
 
   function toggle() {
     toggled ? setToggled(false) : setToggled(true);
@@ -26,15 +26,13 @@ export default function Jarvis() {
       'http://api.weatherapi.com/v1/current.json?key=140ce0a35d6c4beab4f213625221404&q=Berlin&aqi=yes'
     )
       .then((res) => res.json())
-      .then((result) => result.current.temp_c)
-      .then((realResult) => setDegreesCelsius(realResult));
+      .then((result) => setDegreesCelsius(result.current.temp_c));
   }
 
   function randomJoke() {
     fetch('http://localhost:3002/joke')
       .then((res) => res.json())
-      .then((result) => result.joke)
-      .then((realResult) => setJoke(realResult));
+      .then((result) => setJoke(result.joke));
   }
 
   async function turnLightOn(hue, sat, bri) {
