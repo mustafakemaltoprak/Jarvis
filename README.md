@@ -5,9 +5,7 @@ Jarvis is a virtual home assistant that makes your day to day life a little bit 
 <br />
 Make sure to check out [this](https://www.youtube.com/watch?v=eVKmDTVNN30) video to see a very basic introduction to Jarvis.
 <br />
-#
 <br />![Screen Recording 2022-06-12 at 02 12 14](https://user-images.githubusercontent.com/96595583/173208999-fd7a64d6-c26a-425a-9ca6-13cd71c5108a.gif)
-#
 # Disclaimer
 **Light commands** will **only** work with **Philips HUE Smart Lights**, follow [this](https://developers.meethue.com/develop/get-started-2/) documentation to set it up.
 <br />
