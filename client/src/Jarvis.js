@@ -20,7 +20,9 @@ export default function Jarvis() {
   });
   const openai = new OpenAIApi(configuration);
 
-  const { speak } = useSpeechSynthesis();
+  const { speak, voices } = useSpeechSynthesis();
+
+  console.log(voices);
 
   let SpeechRecognition =
     window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -85,56 +87,56 @@ export default function Jarvis() {
         transcript.includes('off')
       ) {
         turnLightOff();
-        speak({ text: 'I turned the lights off sir' });
+        speak({ text: 'I turned the lights off sir', voice: voices[15] });
         return;
       } else if (
         (transcript.includes('lights') || transcript.includes('light')) &&
         transcript.includes('on')
       ) {
         turnLightOn(133, 1, 250);
-        speak({ text: 'I turned the lights on sir' });
+        speak({ text: 'I turned the lights on sir', voice: voices[15] });
         return;
       } else if (
         (transcript.includes('lights') || transcript.includes('light')) &&
         transcript.includes('red')
       ) {
         turnLightOn(1, 250, 250);
-        speak({ text: 'Your lights are now red sir' });
+        speak({ text: 'Your lights are now red sir', voice: voices[15] });
         return;
       } else if (
         (transcript.includes('lights') || transcript.includes('light')) &&
         transcript.includes('green')
       ) {
         turnLightOn(27306, 250, 250);
-        speak({ text: 'Your lights are now green sir' });
+        speak({ text: 'Your lights are now green sir', voice: voices[15] });
         return;
       } else if (
         (transcript.includes('lights') || transcript.includes('light')) &&
         transcript.includes('white')
       ) {
         turnLightOn(133, 1, 250);
-        speak({ text: 'Your lights are now white sir' });
+        speak({ text: 'Your lights are now white sir', voice: voices[15] });
         return;
       } else if (
         (transcript.includes('lights') || transcript.includes('light')) &&
         transcript.includes('blue')
       ) {
         turnLightOn(43690, 250, 250);
-        speak({ text: 'Your lights are now blue sir' });
+        speak({ text: 'Your lights are now blue sir', voice: voices[15] });
         return;
       } else if (
         (transcript.includes('lights') || transcript.includes('light')) &&
         transcript.includes('purple')
       ) {
         turnLightOn(50000, 250, 250);
-        speak({ text: 'Your lights are now purple sir' });
+        speak({ text: 'Your lights are now purple sir', voice: voices[15] });
         return;
       } else if (
         (transcript.includes('lights') || transcript.includes('light')) &&
         transcript.includes('pink')
       ) {
         turnLightOn(55000, 250, 250);
-        speak({ text: 'Your lights are now pink sir' });
+        speak({ text: 'Your lights are now pink sir', voice: voices[15] });
         return;
       } else if (
         transcript.includes('search') ||
@@ -144,13 +146,17 @@ export default function Jarvis() {
         let searchTerm = toArray.slice(2);
         let realSearchTerm = searchTerm.join(' ');
         window.open('//google.com/search?q=' + realSearchTerm, '_blank');
-        speak({ text: `these are the results for ${realSearchTerm} sir.` });
+        speak({
+          text: `these are the results for ${realSearchTerm} sir.`,
+          voice: voices[15],
+        });
         return;
       } else if (transcript.includes('image')) {
         let imageString = newTranscript.replace('Jarvis', '');
         const openai = new OpenAIApi(configuration);
         speak({
           text: 'Coming right away sir, please give me a moment to create your image.',
+          voice: voices[15],
         });
         const response = await openai.createImage({
           prompt: `${imageString}`,
@@ -163,6 +169,7 @@ export default function Jarvis() {
         setImageThere(true);
         speak({
           text: 'The image is finished, I hope you are happy with the result.',
+          voice: voices[15],
         });
         return;
       } else if (
@@ -181,7 +188,7 @@ export default function Jarvis() {
       });
       setAiResponse(response.data.choices[0].text);
       setShowButton(true);
-      speak({ text: `${response.data.choices[0].text}` });
+      speak({ text: `${response.data.choices[0].text}`, voice: voices[15] });
     } else {
       setJarvisIncluded(false);
     }
@@ -209,7 +216,7 @@ export default function Jarvis() {
             onClick={() => {
               toggle();
               startListening();
-              speak({ text: 'Welcome back sir' });
+              speak({ text: 'Welcome back sir', voice: voices[15] });
             }}
           >
             <div className="coil coil-1"></div>
