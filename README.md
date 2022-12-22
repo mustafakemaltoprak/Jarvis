@@ -30,4 +30,4 @@ Include Jarvis & Google or Search & Search Term: Will google the search term for
 Include Jarvis & Stop & Listening: Will stop listening for your voice.
 <br />
 <br />
-The updated version of Jarvis now uses OpenAI too, so any questions besides the one above should get filled. (Code Completion isn't implemented yet, probably will be soon)
+The updated version of Jarvis now uses OpenAI too, so any questions besides the ones above should get filled. (Code Completion isn't implemented yet, probably will be soon)
